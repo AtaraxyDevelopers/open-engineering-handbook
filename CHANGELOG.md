@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 — 2026-11-13
+
+Reject missing option values and extra arguments, and clarify document creation and repeat-run behavior.
+
+All README walkthroughs were reviewed from clean checkouts.
+
 ## 0.1.0 — 2026-11-13
 
 Initial public release of Open Engineering Handbook: working examples, automated checks,

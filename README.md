@@ -9,7 +9,11 @@ An open-source project from [Ataraxy Developers](https://github.com/AtaraxyDevel
 
 ## Quick start
 
-Requires Node.js 22 or 24 and npm. Git is optional if you download the source ZIP.
+Install [Node.js](https://nodejs.org/en/download) 22 or 24 (npm is included). Check
+`node --version` and `npm --version` in your terminal. The commands below run from
+this repository's root folder, the one containing `package.json`.
+
+**With Git:**
 
 ```sh
 git clone https://github.com/AtaraxyDevelopers/open-engineering-handbook.git
@@ -18,6 +22,15 @@ npm ci
 npm test
 ```
 
+**Without Git:** choose **Code → Download ZIP** on GitHub, extract the archive,
+and open a terminal in the extracted `open-engineering-handbook-main` folder (release archives may
+include the version in the folder name). Run `npm ci` and `npm test` there.
+Use the **source-code ZIP**, not an npm `.tgz` package, to follow this developer walkthrough.
+The install step may need internet access; the examples run locally afterward.
+
+On Windows PowerShell, if `npm.ps1` is blocked by execution policy, use `npm.cmd`
+in place of `npm` in these commands. No execution-policy change is required.
+
 ```sh
 npm run demo
 node src/cli.mjs architecture-decision --title "Choose a job queue"
@@ -25,7 +38,9 @@ node src/cli.mjs bug-report --title "Duplicate notification" --out bug-report.md
 ```
 
 The generator prints to stdout by default. With --out it creates a **new** file and
-refuses to overwrite an existing one. The destination directory must already exist.
+refuses to overwrite an existing one. After the first run, open `bug-report.md` in
+your editor. For another document, choose a different output filename. The destination
+directory must already exist. Options such as `--out` and `--date` require a value.
 Use --date YYYY-MM-DD for a reproducible date; otherwise the current UTC date is used.
 
 ## Read and adapt
@@ -54,6 +69,10 @@ template generation. No external services or accounts are required.
 
 Tests render every template, verify date and title validation, reject unknown paths,
 and confirm an existing document cannot be overwritten.
+
+## Expected first run
+
+The demo lists five templates. The architecture command prints a document. The `--out` command creates `bug-report.md`; a second attempt using that filename fails without overwriting it.
 
 ## Contributing and support
 

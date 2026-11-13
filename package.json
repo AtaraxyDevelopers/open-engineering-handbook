@@ -1,6 +1,6 @@
 {
   "name": "@ataraxydevelopers/open-engineering-handbook",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adaptable engineering practices, fictional worked examples, and a safe template generator.",
   "type": "module",
   "engines": {
