@@ -1,0 +1,33 @@
+{
+  "name": "@ataraxydevelopers/open-engineering-handbook",
+  "version": "0.1.0",
+  "description": "Adaptable engineering practices, fictional worked examples, and a safe template generator.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Ataraxy Developers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtaraxyDevelopers/open-engineering-handbook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AtaraxyDevelopers/open-engineering-handbook/issues"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node src/cli.mjs --list"
+  },
+  "bin": {
+    "engineering-template": "src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "templates",
+    "guides",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}
