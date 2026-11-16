@@ -1,6 +1,6 @@
 {
   "name": "@ataraxydevelopers/open-engineering-handbook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Adaptable engineering practices, fictional worked examples, and a safe template generator.",
   "type": "module",
   "engines": {
@@ -28,6 +28,8 @@
     "guides",
     "examples",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "docs/brand",
+    "BRANDING.md"
   ]
 }
